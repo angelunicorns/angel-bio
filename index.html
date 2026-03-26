@@ -384,30 +384,6 @@
       font-size: 1.2rem;
     }
 
-    /* Стили для счётчика */
-    .counter-box {
-      text-align: center;
-      margin-top: 1rem;
-      padding: 0.5rem;
-      border-radius: 2rem;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(4px);
-    }
-
-    .counter-text {
-      font-size: 0.8rem;
-      color: #bc9eff;
-      letter-spacing: 1px;
-    }
-
-    .counter-number {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #e5d5ff;
-      margin-left: 8px;
-      font-family: monospace;
-    }
-
     .footer-note {
       text-align: center;
       font-size: 0.7rem;
@@ -450,9 +426,6 @@
       }
       .section-title {
         font-size: 1.2rem;
-      }
-      .counter-number {
-        font-size: 1.3rem;
       }
     }
   </style>
@@ -528,6 +501,7 @@
         </div>
       </div>
 
+      <!-- Telegram каналы (исправлено: ссылка на @angelholidays, которая работает) -->
       <div class="section-card">
         <div class="section-title">
           <i class="fab fa-telegram-plane"></i>
@@ -614,37 +588,10 @@
         </div>
       </div>
 
-      <!-- СЧЁТЧИК ПОСЕЩЕНИЙ -->
-      <div class="counter-box">
-        <span class="counter-text">
-          <i class="fas fa-eye"></i> 👥 просмотров страницы:
-        </span>
-        <span class="counter-number" id="visitCounter">0</span>
-      </div>
-
       <div class="footer-note">
         <i class="fas fa-laptop-code"></i> Angel · 15 лет · Армения | Фриланс, код, путешествия ♡
       </div>
     </div>
   </div>
-
-  <script>
-    // ПРОСТОЙ СЧЁТЧИК ПОСЕЩЕНИЙ
-    // Использует localStorage - сохраняет количество просмотров в браузере
-    // ВАЖНО: счётчик показывает сколько раз открыли страницу на этом устройстве/браузере
-    // Если хотите общий счётчик для всех посетителей - нужна база данных, но это уже сложнее
-    
-    let count = localStorage.getItem('angelSiteVisits');
-    if (count === null) {
-      count = 1;
-    } else {
-      count = Number(count) + 1;
-    }
-    localStorage.setItem('angelSiteVisits', count);
-    document.getElementById('visitCounter').innerText = count;
-    
-    // Пояснение: этот счётчик показывает сколько раз вы (или кто-то с этого браузера) открыли страницу
-    // Для общего счётчика на всех посетителей нужно подключать внешний сервис
-  </script>
 </body>
 </html>
