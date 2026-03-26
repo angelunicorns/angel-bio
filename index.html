@@ -26,7 +26,6 @@
       background: #0a0a1a;
     }
 
-    /* АНИМИРОВАННЫЙ ФОН — фиолетово-бело-черный градиент */
     .animated-bg {
       position: fixed;
       top: 0;
@@ -79,7 +78,6 @@
       100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.3; }
     }
 
-    /* главная карточка */
     .bio-card {
       max-width: 580px;
       width: 100%;
@@ -99,7 +97,6 @@
       border-color: rgba(200, 160, 255, 0.6);
     }
 
-    /* шапка профиля */
     .hero {
       background: linear-gradient(115deg, #170e2a 0%, #21153b 100%);
       padding: 2rem 1.5rem 2rem 1.5rem;
@@ -152,12 +149,10 @@
       border: 1px solid rgba(210, 170, 255, 0.4);
     }
 
-    /* контент */
     .content {
       padding: 1.6rem 1.4rem 1.8rem;
     }
 
-    /* информация сетка */
     .info-grid {
       display: flex;
       flex-direction: column;
@@ -211,7 +206,6 @@
       flex-wrap: wrap;
     }
 
-    /* секции */
     .section-card {
       background: rgba(0, 0, 0, 0.45);
       backdrop-filter: blur(8px);
@@ -241,7 +235,6 @@
       color: #ded9f0;
     }
 
-    /* теги интересов */
     .interests-list {
       display: flex;
       flex-wrap: wrap;
@@ -262,7 +255,6 @@
       border: 1px solid rgba(210, 170, 255, 0.3);
     }
 
-    /* ссылки Telegram */
     .tg-link-list {
       display: flex;
       flex-direction: column;
@@ -312,7 +304,6 @@
       transform: translateX(6px);
     }
 
-    /* друзья */
     .friends-wrap {
       display: flex;
       flex-wrap: wrap;
@@ -346,7 +337,6 @@
       color: #bc9aff;
     }
 
-    /* анонимная кнопка */
     .anon-button {
       background: linear-gradient(135deg, #2f2352, #1e1738);
       border-radius: 1.2rem;
@@ -394,7 +384,6 @@
       font-size: 1.2rem;
     }
 
-    /* футер */
     .footer-note {
       text-align: center;
       font-size: 0.7rem;
@@ -415,7 +404,6 @@
       color: white;
     }
 
-    /* адаптация под телефоны */
     @media (max-width: 550px) {
       body {
         padding: 0.9rem;
@@ -443,7 +431,6 @@
   </style>
 </head>
 <body>
-  <!-- анимированный фон -->
   <div class="animated-bg"></div>
   <div class="floating-particles">
     <div class="particle" style="width: 250px; height: 250px; top: 10%; left: -5%; animation-duration: 20s;"></div>
@@ -463,7 +450,6 @@
     </div>
 
     <div class="content">
-      <!-- основная информация -->
       <div class="info-grid">
         <div class="info-row">
           <div class="info-icon"><i class="fas fa-mars"></i></div>
@@ -501,7 +487,6 @@
         </div>
       </div>
 
-      <!-- О себе -->
       <div class="section-card">
         <div class="section-title">
           <i class="fas fa-user-astronaut"></i> 
@@ -516,7 +501,7 @@
         </div>
       </div>
 
-      <!-- Telegram каналы (ИСПРАВЛЕНО: @angelsholidays) -->
+      <!-- Telegram каналы (исправлено: ссылка на @angelholidays, которая работает) -->
       <div class="section-card">
         <div class="section-title">
           <i class="fab fa-telegram-plane"></i>
@@ -539,10 +524,10 @@
             </div>
             <i class="fas fa-arrow-right" style="color:#bc9aff;"></i>
           </a>
-          <a href="https://t.me/angelsholidays" target="_blank" class="tg-link-item">
+          <a href="https://t.me/angelholidays" target="_blank" class="tg-link-item">
             <i class="fab fa-telegram"></i>
             <div class="tg-link-info">
-              <div class="tg-link-name">@angelsholidays</div>
+              <div class="tg-link-name">@angelholidays</div>
               <div class="tg-link-desc">✈️ страны, путешествия, вдохновение</div>
             </div>
             <i class="fas fa-arrow-right" style="color:#bc9aff;"></i>
@@ -550,7 +535,6 @@
         </div>
       </div>
 
-      <!-- Анонимные сообщения -->
       <a href="http://t.me/anonaskbot?start=us_fdshck" target="_blank" class="anon-button">
         <div class="anon-left">
           <i class="fas fa-comment-dots"></i>
@@ -564,7 +548,6 @@
         </div>
       </a>
 
-      <!-- Мои друзья -->
       <div class="section-card">
         <div class="section-title">
           <i class="fas fa-users"></i>
@@ -583,7 +566,6 @@
         </div>
       </div>
 
-      <!-- Интересы -->
       <div class="section-card">
         <div class="section-title">
           <i class="fas fa-heart"></i>
